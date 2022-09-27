@@ -18,56 +18,58 @@
 
 `scaffold-static` lets you automate the local development environment setup and build static sites (vanilla-JS) with ease.
 
-
 ## Installation
+
 `npm install -g scaffold-static`
 
-
 ## Usage
-If you have installed `scaffold-static`  globally, 
+
+If you have installed `scaffold-static` globally,
 
 ```sh
 scaffold-static new <project_name>
 ```
 
 or, you could use it with `npx`
+
 ```sh
 npx scaffold-static new <project_name>
 ```
 
 - Supply `--use-npm` to use `npm` as the package manager.
 
-
 ## How it works
 
-* Choose your favourite CSS framework to work with.
+- Choose your favourite CSS framework to work with.
 
 > Currently the following CSS frameworks are supported:-
 
-* [Bootstrap-3](https://getbootstrap.com/docs/3.3/)
-* [Bootstrap-4](https://getbootstrap.com/)
-* [Materialize css](https://materializecss.com/)
-* [Foudation css](https://foundation.zurb.com/)
-* [Semantic-UI](https://semantic-ui.com/)
-* [Bulma css](https://bulma.io/)
+- [Bootstrap-3](https://getbootstrap.com/docs/3.3/)
+- [Bootstrap-4](https://getbootstrap.com/)
+- [Materialize css](https://materializecss.com/)
+- [Foudation css](https://foundation.zurb.com/)
+- [Semantic-UI](https://semantic-ui.com/)
+- [Bulma css](https://bulma.io/)
 
-* `scaffold-static` generates the bare minimum boilerplate template with necessary `webpack` configurations to build the project for production.
+- `scaffold-static` generates the bare minimum boilerplate template with necessary `webpack` configurations to build the project for production.
 
   A `webpack.config.js` file is made available which depends on the following packages:-
+
   - [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin): Simplifies creation of HTML files to serve your webpack bundles.
-  - [css-loader](https://github.com/webpack-contrib/css-loader) -  interprets `@import` and `url()` like `import/require()` and will resolve them.
+  - [css-loader](https://github.com/webpack-contrib/css-loader) - interprets `@import` and `url()` like `import/require()` and will resolve them.
   - [style-loader](https://github.com/webpack-contrib/style-loader) - Injects CSS into the DOM.
 
-* Leverage the advantages put forward by `webpack-dev-server` such as [Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement/) essentially adding it to the DX.
-
+- Leverage the advantages put forward by `webpack-dev-server` such as [Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement/) essentially adding it to the DX.
 
 ## Contributing
-  Please see the [contributing guidelines](.github/CONTRIBUTING.md)
+
+Please see the [contributing guidelines](.github/CONTRIBUTING.md)
 
 ## License
+
 > GNU GPL V3
 
-
 ## Credits
+
 - Created by [James George](https://twitter.com/james_madhacks)
 - Logo by [Caneco](https://twitter.com/caneco)
