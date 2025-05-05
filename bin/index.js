@@ -16,7 +16,7 @@ program
 
 program.on('command:*', ([cmd]) => {
   program.outputHelp();
-  console.log(`  ` + kleur.red(`\n  Unknown command ${kleur.yellow(cmd)}.`));
+  console.log('  ' + kleur.red(`\n  Unknown command ${kleur.yellow(cmd)}.`));
   console.log();
 });
 
