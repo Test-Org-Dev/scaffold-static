@@ -42,7 +42,7 @@ describe('new command', () => {
 
     // Assertions
     expect(exitCode).toBe(0);
-    generatedFiles.forEach(file =>
+    generatedFiles.forEach((file) =>
       expect(fs.existsSync(path.join(testDirPath, file))).toBeTruthy()
     );
 
@@ -52,7 +52,7 @@ describe('new command', () => {
 
     // Assertion for the installed dependencies
     expect(pkgJson.dependencies).toBeFalsy();
-    deps.forEach(dep => expect(pkgJson.devDependencies[dep]).toBeTruthy());
+    deps.forEach((dep) => expect(pkgJson.devDependencies[dep]).toBeTruthy());
 
     // Assertion for the configured scripts
     expect(pkgJson.name).toBe('test-app');
@@ -67,13 +67,13 @@ describe('new command', () => {
     });
 
     const generatedFilesWithNpm = [
-      ...generatedFiles.filter(file => file !== 'yarn.lock'),
+      ...generatedFiles.filter((file) => file !== 'yarn.lock'),
       'package-lock.json',
     ];
 
     // Assertions
     expect(exitCode).toBe(0);
-    generatedFilesWithNpm.forEach(file =>
+    generatedFilesWithNpm.forEach((file) =>
       expect(fs.existsSync(path.join(testDirPath, file))).toBeTruthy()
     );
 
@@ -83,7 +83,7 @@ describe('new command', () => {
 
     // Assertion for the installed dependencies
     expect(pkgJson.dependencies).toBeFalsy();
-    deps.forEach(dep => expect(pkgJson.devDependencies[dep]).toBeTruthy());
+    deps.forEach((dep) => expect(pkgJson.devDependencies[dep]).toBeTruthy());
 
     // Assertion for the configured scripts
     expect(pkgJson.name).toBe('test-app');
@@ -105,7 +105,7 @@ describe('new command', () => {
 
     // Assertions
     expect(exitCode).toBe(0);
-    generatedFiles.forEach(file =>
+    generatedFiles.forEach((file) =>
       expect(fs.existsSync(path.join(testDirPath, file))).toBeTruthy()
     );
 
@@ -115,7 +115,7 @@ describe('new command', () => {
 
     // Assertion for the installed dependencies
     expect(pkgJson.dependencies).toBeFalsy();
-    deps.forEach(dep => expect(pkgJson.devDependencies[dep]).toBeTruthy());
+    deps.forEach((dep) => expect(pkgJson.devDependencies[dep]).toBeTruthy());
 
     // Assertion for the configured scripts
     expect(pkgJson.name).toBe('test-app');
